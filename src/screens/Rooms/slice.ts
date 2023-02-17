@@ -14,7 +14,7 @@ const initialState: RoomState = {
   roomInfo: new Array<RoomInfoSanitized>(),
   selectedRoom: 0,
   requestStatus: 'initial', 
-  showGuests: false
+  showGuests: true
 };
 
 export const fetchRoomData = createAsyncThunk(
