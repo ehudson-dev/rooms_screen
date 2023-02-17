@@ -3,7 +3,7 @@ import React from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { RoomImage } from '../../common/components/RoomImage';
 import RoomSummary from '../../common/components/RoomSummary';
-import NavBar from '../../features/NavBar';
+import NavBar from '../../common/components/NavBar';
 import RoomTabs from '../../features/RoomTabs';
 import { RoomChips } from '../../common/components/RoomChips';
 import  { fetchRoomData, status, roomInfo, selectedRoom, showGuests} from './slice';
