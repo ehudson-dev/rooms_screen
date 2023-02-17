@@ -1,0 +1,35 @@
+
+.linkContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left:12px;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.controlsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top:48px;
+}
+
+@media (min-width: 1000px) {
+    .linkContainer{
+        justify-content: center;
+    }
+    .linksContainer{
+        justify-content: center;
+    }
+    .controlsContainer{
+        justify-content: center;
+    }
+}
