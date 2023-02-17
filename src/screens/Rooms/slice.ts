@@ -4,14 +4,14 @@ import { GetRooms, RoomsDataForRedux } from '../../common/services/api';
 import { RoomInfoSanitized } from '../../common/models';
 
 export interface RoomState {
-  roomInfo: Array<RoomInfoSanitized>;
+  roomInfo: Array<RoomInfoSanitized>
   selectedRoom: number;
   requestStatus: 'initial' | 'inflight' | 'error' | 'success';
   showGuests: boolean;
 }
 
 const initialState: RoomState = {
-  roomInfo: new Array<RoomInfoSanitized>,
+  roomInfo: new Array<RoomInfoSanitized>(),
   selectedRoom: 0,
   requestStatus: 'initial', 
   showGuests: false
@@ -45,7 +45,7 @@ export const roomsSlice = createSlice({
     builder
       .addCase(fetchRoomData.pending, (state) => {
         state.requestStatus = 'inflight';
-        state.roomInfo = new Array<RoomInfoSanitized>
+        state.roomInfo = new Array<RoomInfoSanitized>();
       })
       .addCase(fetchRoomData.fulfilled, (state, action) => {
         state.requestStatus = 'success';

@@ -14,7 +14,7 @@ export default function RoomSummary(props: RoomSummaryProps){
         <div className={styles.center}>
             <div className={styles.container}>
                 <div className={styles.detailsContainer}>
-                    <img src={'./doorIcon.png'} className={styles.doorIcon} />
+                    <img src={'./doorIcon.png'} alt={"Summary Icon"} className={styles.doorIcon} />
                     <div className={styles.textContainer}>
                         <Typography variant='h6'>
                             {props.roomInfo.room.roomName}

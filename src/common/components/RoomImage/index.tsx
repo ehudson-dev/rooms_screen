@@ -22,6 +22,7 @@ export function RoomImage(props: RoomImageProps){
         <img
           src={props.url}
           className={styles.image}
+          alt={"Room"}
           onError={imageFailHandler}
           onLoad={handleLoad}
         />

@@ -22,7 +22,7 @@ export function GetRooms(roomIds: Array<string>): Promise<RoomsDataForRedux> {
     return new Promise<RoomsDataForRedux>((resolve, reject) =>{
 
         let roomsDataForRedux : RoomsDataForRedux = {
-            roomInfo: new Array<RoomInfoSanitized>
+            roomInfo: new Array<RoomInfoSanitized>()
         } 
 
         fetch("https://destifyfunc-api-dev.azurewebsites.net/api/rooms?roomIds=" + roomIds.toString(), requestOptions)
